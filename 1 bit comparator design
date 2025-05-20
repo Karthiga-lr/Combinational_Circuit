@@ -1,0 +1,7 @@
+module comp(input a,b,output a_eql_b,a_grt_b,a_lsn_b);
+  assign a_eql_b=(~a&~b)|(a&b);
+  assign a_grt_b= a&~b;
+  assign a_lsn_b= ~a&b;
+endmodule
+    
+
